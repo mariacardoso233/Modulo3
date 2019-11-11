@@ -9,11 +9,34 @@
                 margin: 25px;
                 background-color: lightblue;
             }
-            p{
-                border-style: dotted;
-                border-width: 4px;
-                border-color: red;
+            p {
+                border-top-style: dotted;
+                border-top-width: 4px;
+                border-top-color: red;
+                border: 5px solid green;
             }
+            a {
+                background-color: lightblue;
+            }
+            /* visited link */
+            a {
+                background-color: lightblue;
+            }
+            /* mouse over link */
+            a {
+                background-color: yellow;
+            }
+            /* selected link */
+            a {
+                background-color: yellow;
+            }
+            .highlight{
+                background-color: lightblue;
+            }
+            input{
+                background-color: lightblue;
+            }
+
         </style>
     </head>
             
@@ -24,6 +47,14 @@
     
         <h1>This is a Heading</h1>
         <p>This is a paragraph.</p>
-        
+        <p><a href="https://www.w3schools.com">W3Schools.com</a></p>
+        <p class="highlight">This is another paragraph.</p>
+
+        <form action="/action_page.php" method="get">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="submit" value="Submit">
+        </form>
+    
 </body>
 </html>
