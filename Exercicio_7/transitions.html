@@ -29,16 +29,18 @@
         }
         
         .box-1 {
-            /* Add transition here */
+            /* animar background-color em 2 segundos, com atraso de 0.5s */
+            transition: background-color 2s linear 0s;
         }
         
         .box-1:hover,
         .box-1.logged-in {
-            background-color: purple;
+            background-color: purple;  
         }
         
         .box-2 {
-            /* Add transition here */
+            /* animar color em 3 segundos com atraso de 0.5s */
+            transition: color 3s ease 0.5s;
         }
         
         .box-2:hover {
@@ -46,7 +48,8 @@
         }
         
         .box-3 {
-            /* Add transition here */
+            /* animar width em 0.5segundos com atraso de 3s. */
+            transition: width 0.5s ease 2s;
         }
         
         .box-3:hover {
@@ -54,7 +57,8 @@
         }
         
         .box-4 {
-            /* Add transition here */
+            /* animar width em 0.5s, height em 5s */
+            transition: width 0.5s, height 5s;
         }
         
         .box-4:hover {
@@ -69,13 +73,9 @@
 <body>
 
     <div class="container">
-
         <div class="box box-1">1</div>
-
         <div class="box box-2">2</div>
-
         <div class="box box-3">3</div>
-
         <div class="box box-4">4</div>
 
     </div>
